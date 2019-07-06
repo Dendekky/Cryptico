@@ -26,15 +26,14 @@ while(copyStr.length > 0) {
 
 
 // this joins each sub array to make it a string 
-result.some(function(item, index, array){
-    var ans = item.join("");
-    var rectangle1 = document.getElementById('rectangle1');
-rectangle1 = rectangle1.getContext("2d");
-rectangle1.fillText(ans, 150, 100);
-console.log(ans)
+ans = "<p>";
+result.forEach(function(value){
+    ans +="<span>" + "\"" + value.join("") + "\"" + "</span>";
+    ans += "</p>"
+    document.getElementById("test").innerHTML = ans;
 })
 
-
-
+console.log(result[0][1] + result[1][1] + result[2][1] + 
+    result[3][1] + result[4][1] + result[5][1] + result[6][1] );
 
 
