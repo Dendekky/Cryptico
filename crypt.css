@@ -1,3 +1,8 @@
+*{
+	font-size: 18px;
+	padding: 8px;
+}
+
 div{
     font-family: 'Courier New', Courier, monospace ;
 }
